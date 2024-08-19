@@ -1,0 +1,13 @@
+<p>We are logged!</p>
+
+@if (isLogged) {
+  <button (click)="onClickLogout()">
+    <- Logout
+  </button>
+} @else { 
+  <button (click)="onClickLogin()">
+    Login -> 
+  </button>
+}
+
+<button routerLink="/home">Home</button>
